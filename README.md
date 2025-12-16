@@ -15,6 +15,7 @@ Skapa en ny HTML-sida och bygg ett klassiskt kontaktformulär. Fokusera på att 
 
     - **Namn** (Ska stödja autocomplete).
     - **E-post** (Ska visa rätt tangentbord i mobilen + autocomplete).
+    - **Ämne** (En dropdown/select med alternativ för olika avdelningar t.ex. "Support", "Försäljning").
     - **Meddelande** (Ska vara en textarea).
 
 3.  Alla fält ska ha en **tydlig koppling** mellan label och input (använd for och id).
@@ -27,11 +28,11 @@ Skapa en ny HTML-sida och bygg ett klassiskt kontaktformulär. Fokusera på att 
 
 Vill du utmana dig själv? Försök att återskapa utvärderingsformuläret vi gjorde på föreläsningen, eller hitta på ett eget scenario (t.ex. bordsbokning eller anmälan till ett event).
 
-**Försök få med:**
-
 - **Försök få med:**
 
 - En **Modal** () som öppnas med en knapp.
+- **Checkboxes** För frågor där man kan välja fler svar
+- **Range slider** Gärna kopplad till en datalist för att visa markeringar
 - **Grupperingar** med **fieldset** och **legend** (t.ex. för Radio buttons).
 - Avancerade input-typer som type="date", type="range" (gärna med ) eller .\* Hjälptext kopplad med aria-describedby.
 
