@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="">
+      <h2>Kontakta oss</h2>
+      <form action="#" method="POST" class="">
+        <label for="user-name">Ditt namn</label>
+        <input
+          type="text"
+          name="username"
+          id="user-name"
+          required
+          autocomplete="name"
+          placeholder=""
+        />
+
+        <label for="user-email">E-post</label>
+        <input
+          type="email"
+          name="email"
+          id="user-email"
+          required
+          autocomplete="email"
+        />
+
+        <label for="dept">Avedlning</label>
+        <select name="department" id="dept">
+          <option value="" disabled selected>Välj Avedlning</option>
+          <option value="support">Kundtjänst</option>
+          <option value="sales">Sälj</option>
+        </select>
+
+        <label>Meddelande</label>
+        <textarea name="message" id="msg" rows="5"></textarea>
+        <button type="submit" class="">Skicka</button>
+      </form>
+    </main>
+  </body>
+</html>

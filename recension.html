@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Forms</title>
+  </head>
+
+  <body>
+    <buttton onclick="document.getElementById('viewModal').showModal()" class=""
+      >Ge oss en recension</buttton
+    >
+
+    <dialog id="viewModal">
+      <div class="">
+        <div class="">
+          <h2>Hjälp oss bli bättre!</h2>
+          <button
+            type="button"
+            class=""
+            onclick="document.getElementById('viewModal').close()"
+            aria-label="Stäng"
+          >
+            x
+          </button>
+        </div>
+        <form action="#" method="POST" class="">
+          <div class="">
+            <label for="guest-email">Epost</label>
+          </div>
+          <input
+            type="email"
+            name="email"
+            id="guest-email"
+            autocomplete="email"
+            placeholder="epost@epost.se"
+          />
+          <label for="visit-date">När besökte ni oss?</label>
+          <input type="date" id="visit-date" name="visit_date" />
+
+          <label for="guests">Hur många var ni?</label>
+          <select id="guests" name="guests">
+            <option value="1">Jag var ensam</option>
+            <option value="2">2 personer</option>
+            <option value="3-5">3-5 personer</option>
+            <option value="6+">Fler än 6 personer</option>
+          </select>
+
+          <label for="rating">Rekommendera oss (0-10)</label>
+          <input
+            type="range"
+            id="rating"
+            name="rating"
+            min="0"
+            max="10"
+            step="1"
+            list="rating-markers"
+          />
+          <datalist id="rating-markers">
+            <option value="0"></option>
+            <option value="5"></option>
+            <option value="10"></option>
+          </datalist>
+
+          <fieldset class="">
+            <legend>Är det första gången ni besöker oss?</legend>
+            <input
+              class=""
+              type="radio"
+              id="visit-yes"
+              name="visit_frequency"
+              value="yes"
+            />
+            <label for="visit-yes">Ja, första gången</label>
+            <input
+              class=""
+              type="radio"
+              id="visit-no"
+              name="visit_frequency"
+              value="no"
+            />
+            <label for="visit-no">Nej, besökt förut</label>
+          </fieldset>
+
+          <fieldset class="">
+            <legend>Hur hittade ni oss?</legend>
+            <label>
+              <input type="checkbox" name="source" value="social" />
+              Sociala Medier
+            </label>
+            <label>
+              <input type="checkbox" name="source" value="google" />
+              Google
+            </label>
+            <label>
+              <input type="checkbox" name="source" value="friends" />
+              Vänner
+            </label>
+          </fieldset>
+          <label for="comments">Övrigt</label>
+          <textarea id="comments" name="comments" rows="4"></textarea>
+          <button type="submit" class="">Skicka recension</button>
+        </form>
+      </div>
+    </dialog>
+  </body>
+</html>
