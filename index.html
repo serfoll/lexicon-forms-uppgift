@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Forms Uppgift - Kontakt Form</title>
+  </head>
+  <body>
+    <main class="cards">
+      <form action="#" method="POST">
+        <label for="user-name">Fullständiga Namn</label>
+        <input
+          class="my-bot-400"
+          type="text"
+          name="user-name"
+          id="user-name"
+          autocomplete="name"
+          placeholder="John Doe"
+          required
+        />
+        <label for="user-email">E-post</label>
+        <input
+          class="my-bot-400"
+          type="email"
+          name="user-email"
+          id="user-email"
+          autocomplete="email"
+          placeholder="johndoe@mail.se"
+          required
+        />
+        <label for="dept">Avedlning</label>
+        <select class="my-bot-400" name="department" id="dept">
+          <option value="" disabled selected>Välj Avedlning</option>
+          <option value="sales">Försäljning</option>
+          <option value="it">IT</option>
+          <option value="support">Kundtjänst</option>
+        </select>
+        <label for="user-message">Meddelande</label>
+        <textarea
+          class="my-bot-400"
+          name="user-message"
+          id="user-message"
+          rows="3"
+        ></textarea>
+        <button class="btn-primary" type="submit">Skicka</button>
+      </form>
+    </main>
+  </body>
+</html>

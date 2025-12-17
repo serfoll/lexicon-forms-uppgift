@@ -10,17 +10,17 @@ Skapa en ny HTML-sida och bygg ett klassiskt kontaktformulär. Fokusera på att 
 
 **Krav:**
 
-1.  Skapa en form med method="POST".
-2.  Formuläret ska innehålla fält för:
+1.  [x] Skapa en form med method="POST".
+2.  [x] Formuläret ska innehålla fält för:
 
-    - **Namn** (Ska stödja autocomplete).
-    - **E-post** (Ska visa rätt tangentbord i mobilen + autocomplete).
-    - **Ämne** (En dropdown/select med alternativ för olika avdelningar t.ex. "Support", "Försäljning").
-    - **Meddelande** (Ska vara en textarea).
+    - [x] **Namn** (Ska stödja autocomplete).
+    - [x] **E-post** (Ska visa rätt tangentbord i mobilen + autocomplete).
+    - [x] **Ämne** (En dropdown/select med alternativ för olika avdelningar t.ex. "Support", "Försäljning").
+    - [x] **Meddelande** (Ska vara en textarea).
 
-3.  Alla fält ska ha en **tydlig koppling** mellan label och input (använd for och id).
-4.  Lägg till validering (required) på namn och e-post.
-5.  Avsluta med en riktig button type="submit".
+3.  [x] Alla fält ska ha en **tydlig koppling** mellan label och input (använd for och id).
+4.  [x] Lägg till validering (required) på namn och e-post.
+5.  [x] Avsluta med en riktig button type="submit".
 
 > **Tips:** Använd klasserna från style.css (t.ex. .card och .btn-primary) för att styla formuläret.
 
@@ -50,9 +50,8 @@ Nu är det dags att applicera kunskapen på ditt pågående projekt! Gå till di
 
 Innan du känner dig klar, dubbelkolla detta:
 
-- \[ \] Kan jag klicka på texten i en för att aktivera rutan? (Koppling for + id)
-- \[ \] Har jag använt type="email" eller andra där det passar?
-- \[ \] Har jag lagt till autocomplete="..." på namn och e-post?
-- \[ \] Kan jag tabba mig igenom hela formuläret och skicka det med tangentbordet (Enter)?
-- \[ \] Har jag använt och inte en button och inte en div för knappen?
-  g
+- [x] Kan jag klicka på texten i en för att aktivera rutan? (Koppling for + id)
+- [x] Har jag använt type="email" eller andra där det passar?
+- [x] Har jag lagt till autocomplete="..." på namn och e-post?
+- [x] Kan jag tabba mig igenom hela formuläret och skicka det med tangentbordet (Enter)?
+- [x] Har jag använt och inte en button och inte en div för knappen?
