@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms Uppgift - Avancerad Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="advanced-form-header p-200">
+      <h1 class="heading">Hotels Bokning</h1>
+      <button
+        class="btn btn-primary"
+        type="button"
+        onclick="document.getElementById('bookingModal').showModal()"
+      >
+        Boka nu
+      </button>
+    </header>
+
+    <main>
+      <dialog class="booking-modal" id="bookingModal" closedby="any">
+        <h2 id="form-heading" class="modal-heading">
+          Gästuppgifter för bokning
+        </h2>
+
+        <form
+          aria-labelledby="form-heading"
+          class="advanced-form"
+          action="#"
+          method="post"
+        >
+          <div class="flex">
+            <div class="flex-item">
+              <label for="checkin-date">Incheckning</label>
+              <input
+                type="date"
+                name="checkin"
+                id="checkin-date"
+                min="tomorrow"
+                required
+              />
+            </div>
+
+            <div class="flex-item">
+              <label for="nights">Antal Nätter</label>
+              <input
+                type="range"
+                name="nights"
+                id="nights"
+                min="2"
+                max="10"
+                step="1"
+                list="nights-markers"
+              />
+              <datalist id="nights-markers" class="nights-markers">
+                <option value="2" label="2"></option>
+                <option value="4" label="4"></option>
+                <option value="6" label="6"></option>
+                <option value="8" label="8"></option>
+                <option value="10" label="10"></option>
+              </datalist>
+            </div>
+          </div>
+
+          <fieldset class="flex">
+            <legend>Total antal gäster</legend>
+
+            <div class="flex-item">
+              <label for="adults">Vuxna</label>
+              <select name="adults" id="adults">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+
+            <div class="flex-item">
+              <label for="kids">Barn</label>
+              <select name="kids" id="kids">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <div>
+            <label for="guest-name">Fullständig namn</label>
+            <input
+              type="text"
+              name="guest-name"
+              id="guest-name"
+              placeholder="John Doe"
+              autocomplete="name"
+              required
+            />
+          </div>
+
+          <label for="guest-email">E-post</label>
+          <input
+            type="email"
+            name="guest-email"
+            id="guest-email"
+            placeholder="example@mail.se"
+            autocomplete="email"
+            required
+          />
+
+          <div>
+            <label for="guest-tel">Telefon nummer</label>
+            <input
+              type="tel"
+              name="guest-tel"
+              id="guest-tel"
+              placeholder="+460123456789"
+              autocomplete="tel"
+            />
+          </div>
+
+          <div class="btn-group">
+            <button
+              class="btn btn-secondary"
+              type="button"
+              onclick="document.getElementById('bookingModal').close()"
+            >
+              Avbryt
+            </button>
+            <button class="btn btn-primary" type="submit">Boka</button>
+          </div>
+        </form>
+      </dialog>
+    </main>
+  </body>
+</html>
